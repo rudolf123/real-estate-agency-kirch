@@ -6117,3 +6117,1121 @@ Stack trace:
 REQUEST_URI=/index.php/admin
 HTTP_REFERER=http://realestateagency/index.php/request/admin
 ---
+2014/07/09 18:01:09 [error] [system.db.CDbCommand] Error in preparing SQL: DELETE FROM 'YiiSession' WHERE expire<:expire
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/09 18:01:09 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: YiiSession. Выполнявшийся SQL-запрос: DELETE FROM 'YiiSession' WHERE expire<:expire.
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/09 18:01:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+HTTP_REFERER=http://realestateagency/
+---
+2014/07/09 18:06:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+HTTP_REFERER=http://realestateagency/
+---
+2014/07/09 18:08:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+HTTP_REFERER=http://realestateagency/
+---
+2014/07/09 18:08:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/09 18:08:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/09 18:08:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/09 18:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/09 18:08:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/09 18:09:08 [error] [exception.CException] exception 'CException' with message 'Путь CAssetManager.basePath "Z:\home\realestateagency\www\assets" задан неверно. Удостоверьтесь, что директория существует и доступна для записи пользователю, под которым запущен веб-сервер.' in Z:\home\Yii\framework\web\CAssetManager.php:138
+Stack trace:
+#0 Z:\home\Yii\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('Z:\home\realest...')
+#1 Z:\home\Yii\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 Z:\home\Yii\framework\web\CClientScript.php(510): CAssetManager->publish('Z:\home\Yii\fra...')
+#3 Z:\home\Yii\framework\zii\widgets\jui\CJuiWidget.php(98): CClientScript->getCoreScriptUrl()
+#4 Z:\home\Yii\framework\zii\widgets\jui\CJuiWidget.php(81): CJuiWidget->resolvePackagePath()
+#5 Z:\home\Yii\framework\zii\widgets\jui\CJuiButton.php(87): CJuiWidget->init()
+#6 Z:\home\Yii\framework\web\CBaseController.php(147): CJuiButton->init()
+#7 Z:\home\Yii\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.jui...', Array)
+#8 Z:\home\realestateagency\www\protected\views\user\login.php(33): CBaseController->widget('zii.widgets.jui...', Array)
+#9 Z:\home\Yii\framework\web\CBaseController.php(126): require('Z:\home\realest...')
+#10 Z:\home\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\realest...', Array, true)
+#11 Z:\home\Yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\realest...', Array, true)
+#12 Z:\home\Yii\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#13 Z:\home\realestateagency\www\protected\controllers\UserController.php(99): CController->render('login', Array)
+#14 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#15 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#16 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#18 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#22 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#24 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#25 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#26 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php/user/login
+HTTP_REFERER=http://realestateagency/index.php/admin
+---
+2014/07/09 18:15:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+HTTP_REFERER=http://realestateagency/index.php/user/profile
+---
+2014/07/09 18:17:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/admin
+HTTP_REFERER=http://realestateagency/index.php/admin
+---
+2014/07/09 18:18:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\Yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\Yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\Yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/admin')
+#9 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/property/admin
+HTTP_REFERER=http://realestateagency/index.php/admin
+---
+2014/07/09 18:18:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\Yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\Yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\Yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/admin')
+#9 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/property/admin
+HTTP_REFERER=http://realestateagency/index.php
+---
+2014/07/09 18:41:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\Yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\Yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\Yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/create')
+#9 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/property/create
+HTTP_REFERER=http://realestateagency/index.php/property/index
+---
+2014/07/09 19:49:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/1
+---
+2014/07/09 19:50:53 [warning] [application] Не удалось присвоить небезопасный атрибут "number" класса "Property".
+in Z:\home\realestateagency\www\protected\controllers\PropertyController.php (133)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/09 19:54:06 [warning] [application] Не удалось присвоить небезопасный атрибут "number" класса "Property".
+in Z:\home\realestateagency\www\protected\controllers\PropertyController.php (133)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/09 19:54:10 [warning] [application] Не удалось присвоить небезопасный атрибут "number" класса "Property".
+in Z:\home\realestateagency\www\protected\controllers\PropertyController.php (133)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/09 20:13:54 [error] [exception.CException] exception 'CException' with message 'Вы уже зарегистрированы!' in Z:\home\realestateagency\www\protected\controllers\UserController.php:83
+Stack trace:
+#0 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#1 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#11 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/user/login
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/09 20:14:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/index
+---
+2014/07/09 22:22:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "images".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/images...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/images/ajax-loader.gif
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "processupload.php".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('processupload.p...')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('processupload.p...')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/proces...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/processupload.php
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "images".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/images...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/images/ajax-loader.gif
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:29:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "images".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('images')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('images')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/images...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/images/ajax-loader.gif
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:30:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "processimageupload".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('processimageupl...')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('processimageupl...')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/processima...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/processimageupload
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:32:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "processimageupload".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('processimageupl...')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('processimageupl...')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/processima...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/processimageupload
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:33:42 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\Yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\Yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\Yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('processimageupl...')
+#8 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/processima...')
+#9 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/site/processimageupload
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:50:08 [error] [php] imagejpeg() [<a href='function.imagejpeg'>function.imagejpeg</a>]: Unable to open 'F:/Websites/ajax-image-upload/uploads/displaceit_ground_pebble1_displace-131591187.jpg' for writing: No such file or directory (Z:\home\realestateagency\www\protected\controllers\SiteController.php:245)
+Stack trace:
+#0 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): SiteController->actionProcessimageupload()
+#1 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): SiteController->runAction()
+#3 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): SiteController->filterAccessControl()
+#6 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\Yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#9 Z:\home\Yii\framework\web\CWebApplication.php(282): SiteController->run()
+#10 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\realestateagency\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/site/processimageupload
+in Z:\home\realestateagency\www\protected\controllers\SiteController.php (245)
+in Z:\home\realestateagency\www\protected\controllers\SiteController.php (183)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/09 22:52:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "uploads".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('uploads')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('uploads')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/upload...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/uploads/thumb_displaceit_ground_pebble1_displace-1292975931.jpg
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:52:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "uploads".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('uploads')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('uploads')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/upload...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/uploads/displaceit_ground_pebble1_displace-1292975931.jpg
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:52:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "tmpUploads".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('tmpUploads')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('tmpUploads')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/tmpUpl...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/tmpUploads/thumb_displaceit_ground_pebble1_displace-1125539270.jpg
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:52:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "tmpUploads".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('tmpUploads')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('tmpUploads')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/tmpUpl...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/tmpUploads/displaceit_ground_pebble1_displace-1125539270.jpg
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:52:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "tmpUploads".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('tmpUploads')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('tmpUploads')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/tmpUpl...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/tmpUploads/thumb_stone-wall-texture-06-10-bump-341973565.jpg
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/09 22:52:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "tmpUploads".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('tmpUploads')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('tmpUploads')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/tmpUpl...')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/tmpUploads/stone-wall-texture-06-10-bump-341973565.jpg
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/10 13:51:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Необходима авторизация' in Z:\home\Yii\framework\web\auth\CWebUser.php:394
+Stack trace:
+#0 Z:\home\Yii\framework\web\auth\CAccessControlFilter.php(180): CWebUser->loginRequired()
+#1 Z:\home\Yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#2 Z:\home\Yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/create')
+#10 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/property/create
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/10 13:51:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'Необходима авторизация' in Z:\home\Yii\framework\web\auth\CWebUser.php:394
+Stack trace:
+#0 Z:\home\Yii\framework\web\auth\CAccessControlFilter.php(180): CWebUser->loginRequired()
+#1 Z:\home\Yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#2 Z:\home\Yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#3 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('create')
+#9 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/create')
+#10 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/property/create
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/10 14:20:50 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\Yii\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/update')
+#10 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/property/update
+HTTP_REFERER=http://realestateagency/index.php/property/update/2
+---
+2014/07/10 16:00:27 [error] [php] Invalid argument supplied for foreach() (Z:\home\Yii\framework\web\helpers\CHtml.php:1050)
+Stack trace:
+#0 Z:\home\Yii\framework\web\CBaseController.php(95): PropertyController->renderInternal()
+#1 Z:\home\Yii\framework\web\CController.php(869): PropertyController->renderFile()
+#2 Z:\home\realestateagency\www\protected\views\property\admin.php(40): PropertyController->renderPartial()
+#3 Z:\home\Yii\framework\web\CBaseController.php(126): require()
+#4 Z:\home\Yii\framework\web\CBaseController.php(95): PropertyController->renderInternal()
+#5 Z:\home\Yii\framework\web\CController.php(869): PropertyController->renderFile()
+#6 Z:\home\Yii\framework\web\CController.php(782): PropertyController->renderPartial()
+#7 Z:\home\realestateagency\www\protected\controllers\PropertyController.php(142): PropertyController->render()
+#8 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): PropertyController->actionAdmin()
+#9 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): PropertyController->runAction()
+#11 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 Z:\home\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): PropertyController->filterAccessControl()
+#14 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#16 Z:\home\Yii\framework\web\CController.php(265): PropertyController->runActionWithFilters()
+#17 Z:\home\Yii\framework\web\CWebApplication.php(282): PropertyController->run()
+#18 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 Z:\home\realestateagency\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/property/admin?Property%5Bpurpose%5D=&Property%5Bid%5D=&a%5B%5D=1&a%5B%5D=2&Property%5Baddress%5D=&Property%5Barea%5D=&Property%5Bprice%5D=&Property%5Btype%5D=&submit=%D0%9D%D0%B0%D0%B9%D1%82%D0%B8
+in Z:\home\realestateagency\www\protected\views\property\_search.php (23)
+in Z:\home\realestateagency\www\protected\views\property\admin.php (40)
+in Z:\home\realestateagency\www\protected\controllers\PropertyController.php (142)
+2014/07/10 16:00:52 [error] [php] Invalid argument supplied for foreach() (Z:\home\Yii\framework\web\helpers\CHtml.php:1050)
+Stack trace:
+#0 Z:\home\Yii\framework\web\CBaseController.php(95): PropertyController->renderInternal()
+#1 Z:\home\Yii\framework\web\CController.php(869): PropertyController->renderFile()
+#2 Z:\home\realestateagency\www\protected\views\property\admin.php(40): PropertyController->renderPartial()
+#3 Z:\home\Yii\framework\web\CBaseController.php(126): require()
+#4 Z:\home\Yii\framework\web\CBaseController.php(95): PropertyController->renderInternal()
+#5 Z:\home\Yii\framework\web\CController.php(869): PropertyController->renderFile()
+#6 Z:\home\Yii\framework\web\CController.php(782): PropertyController->renderPartial()
+#7 Z:\home\realestateagency\www\protected\controllers\PropertyController.php(142): PropertyController->render()
+#8 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): PropertyController->actionAdmin()
+#9 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): PropertyController->runAction()
+#11 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 Z:\home\Yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): PropertyController->filterAccessControl()
+#14 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#16 Z:\home\Yii\framework\web\CController.php(265): PropertyController->runActionWithFilters()
+#17 Z:\home\Yii\framework\web\CWebApplication.php(282): PropertyController->run()
+#18 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 Z:\home\realestateagency\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/property/admin?Property%5Bpurpose%5D=&Property%5Bid%5D=&a%5B%5D=1&a%5B%5D=2&Property%5Baddress%5D=&Property%5Barea%5D=&Property%5Bprice%5D=&Property%5Btype%5D=&submit=%D0%9D%D0%B0%D0%B9%D1%82%D0%B8
+in Z:\home\realestateagency\www\protected\views\property\_search.php (23)
+in Z:\home\realestateagency\www\protected\views\property\admin.php (40)
+in Z:\home\realestateagency\www\protected\controllers\PropertyController.php (142)
+2014/07/10 16:33:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\Yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\Yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\Yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('search')
+#8 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/search')
+#9 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/property/search?Property%5Bpurpose%5D=&purposes%5B%5D=%D0%A1%D0%B2%D0%BE%D0%B1%D0%BE%D0%B4&submit=%D0%9D%D0%B0%D0%B9%D1%82%D0%B8
+HTTP_REFERER=http://realestateagency/index.php/property/admin
+---
+2014/07/10 16:54:50 [error] [exception.CException] exception 'CException' with message 'В классе CActiveDataProvider и его поведениях не найден метод или замыкание с именем "search".' in Z:\home\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\realestateagency\www\protected\views\property\admin.php(45): CComponent->__call('search', Array)
+#1 Z:\home\realestateagency\www\protected\views\property\admin.php(45): CActiveDataProvider->search()
+#2 Z:\home\Yii\framework\web\CBaseController.php(126): require('Z:\home\realest...')
+#3 Z:\home\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\realest...', Array, true)
+#4 Z:\home\Yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\realest...', Array, true)
+#5 Z:\home\Yii\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#6 Z:\home\realestateagency\www\protected\controllers\PropertyController.php(156): CController->render('admin', Array)
+#7 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): PropertyController->actionSearch()
+#8 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#15 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('search')
+#17 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/search')
+#18 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/index.php/property/search?purposes%5B%5D=%D0%9E%D1%84%D0%B8%D1%81&submit=%D0%9D%D0%B0%D0%B9%D1%82%D0%B8
+HTTP_REFERER=http://realestateagency/index.php/property/admin
+---
+2014/07/10 16:56:42 [error] [exception.CException] exception 'CException' with message 'В классе CActiveDataProvider и его поведениях не найден метод или замыкание с именем "getValidators".' in Z:\home\Yii\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\Yii\framework\web\helpers\CHtml.php(2236): CComponent->__call('getValidators', Array)
+#1 Z:\home\Yii\framework\web\helpers\CHtml.php(2236): CActiveDataProvider->getValidators('id')
+#2 Z:\home\Yii\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(CActiveDataProvider), 'id', Array)
+#3 Z:\home\Yii\framework\zii\widgets\grid\CDataColumn.php(103): CHtml::activeTextField(Object(CActiveDataProvider), 'id', Array)
+#4 Z:\home\Yii\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#5 Z:\home\Yii\framework\zii\widgets\grid\CGridView.php(532): CGridColumn->renderFilterCell()
+#6 Z:\home\Yii\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#7 Z:\home\Yii\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#8 Z:\home\Yii\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 Z:\home\Yii\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 Z:\home\Yii\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 Z:\home\Yii\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 Z:\home\realestateagency\www\protected\views\property\searchresult.php(58): CBaseController->widget('zii.widgets.gri...', Array)
+#14 Z:\home\Yii\framework\web\CBaseController.php(126): require('Z:\home\realest...')
+#15 Z:\home\Yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\realest...', Array, true)
+#16 Z:\home\Yii\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\realest...', Array, true)
+#17 Z:\home\Yii\framework\web\CController.php(782): CController->renderPartial('searchresult', Array, true)
+#18 Z:\home\realestateagency\www\protected\controllers\PropertyController.php(156): CController->render('searchresult', Array)
+#19 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): PropertyController->actionSearch()
+#20 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#27 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('search')
+#29 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/search')
+#30 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/index.php/property/search?purposes%5B%5D=%D0%9E%D1%84%D0%B8%D1%81&submit=%D0%9D%D0%B0%D0%B9%D1%82%D0%B8
+HTTP_REFERER=http://realestateagency/index.php/property/admin
+---
+2014/07/10 19:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/user/profile
+---
+2014/07/10 19:29:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/index
+---
+2014/07/10 19:39:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/10 19:48:15 [warning] [application] Не удалось присвоить небезопасный атрибут "passwd2" класса "User".
+in Z:\home\realestateagency\www\protected\controllers\UserController.php (157)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/10 19:50:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in Z:\home\Yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 Z:\home\Yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 Z:\home\Yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#6 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#8 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/update')
+#9 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php/property/update/1
+HTTP_REFERER=http://realestateagency/index.php/property/admin
+---
+2014/07/10 19:51:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\Yii\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/update')
+#10 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/property/update
+HTTP_REFERER=http://realestateagency/index.php/property/update/2
+---
+2014/07/10 19:51:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\Yii\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/update')
+#10 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/property/update
+HTTP_REFERER=http://realestateagency/index.php/property/update/2
+---
+2014/07/10 19:51:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Некорректный запрос.' in Z:\home\Yii\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('update')
+#9 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/update')
+#10 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/property/update
+HTTP_REFERER=http://realestateagency/index.php/property/update/2
+---
+2014/07/10 19:51:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/update/2
+---
+2014/07/10 21:59:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/10 21:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/course/admin
+---
+2014/07/10 22:02:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/user/login
+---
+2014/07/10 22:02:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/course/admin
+---
+2014/07/10 22:02:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/index
+---
+2014/07/11 10:28:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php
+---
+2014/07/11 10:28:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/course/admin
+---
+2014/07/11 10:39:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/11 10:39:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/11 10:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/11 10:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/11 10:40:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/11 10:40:45 [error] [exception.CException] exception 'CException' with message 'Вы уже зарегистрированы!' in Z:\home\realestateagency\www\protected\controllers\UserController.php:83
+Stack trace:
+#0 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#1 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#11 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/user/login
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/11 10:40:48 [error] [exception.CException] exception 'CException' with message 'Вы уже зарегистрированы!' in Z:\home\realestateagency\www\protected\controllers\UserController.php:83
+Stack trace:
+#0 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#1 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#11 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/user/login
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/11 10:41:01 [error] [exception.CException] exception 'CException' with message 'Вы уже зарегистрированы!' in Z:\home\realestateagency\www\protected\controllers\UserController.php:83
+Stack trace:
+#0 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#1 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#11 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/user/login
+HTTP_REFERER=http://realestateagency/index.php
+---
+2014/07/11 10:44:30 [error] [exception.CException] exception 'CException' with message 'Вы уже зарегистрированы!' in Z:\home\realestateagency\www\protected\controllers\UserController.php:83
+Stack trace:
+#0 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionLogin()
+#1 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/login')
+#11 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/user/login
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/11 11:23:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/11 11:25:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/site/index
+---
+2014/07/11 13:23:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/property/admin
+---
+2014/07/11 13:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/request/admin
+---
+2014/07/11 13:24:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/course/admin
+---
+2014/07/11 13:29:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/user/login
+---
+2014/07/11 13:29:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "request/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('request/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/request/admin
+HTTP_REFERER=http://realestateagency/index.php/course/admin
+---
+2014/07/11 13:41:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/user/profile
+---
+2014/07/11 14:49:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/search?areaID=0&areaID=0&submit=%D0%9D%D0%B0%D0%B9%D1%82%D0%B8
+---
+2014/07/11 14:51:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "course/admin".' in Z:\home\Yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('course/admin')
+#1 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/course/admin
+HTTP_REFERER=http://realestateagency/index.php/property/search?areaID=0&areaID=0&submit=%D0%9D%D0%B0%D0%B9%D1%82%D0%B8
+---
+2014/07/11 16:30:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "submit".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('submit')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('submit')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/submit')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/property/submit
+HTTP_REFERER=http://realestateagency/index.php/property/create
+---
+2014/07/11 16:38:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in Z:\home\realestateagency\www\protected\controllers\PropertyController.php:185
+Stack trace:
+#0 Z:\home\realestateagency\www\protected\controllers\PropertyController.php(56): PropertyController->loadModel('0')
+#1 [internal function]: PropertyController->actionView('0')
+#2 Z:\home\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PropertyController), Array)
+#3 Z:\home\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PropertyController), Object(ReflectionMethod), Array)
+#4 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/view')
+#14 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/property/0
+HTTP_REFERER=http://realestateagency/index.php/property/index
+---
+2014/07/11 16:39:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in Z:\home\realestateagency\www\protected\controllers\PropertyController.php:185
+Stack trace:
+#0 Z:\home\realestateagency\www\protected\controllers\PropertyController.php(56): PropertyController->loadModel('0')
+#1 [internal function]: PropertyController->actionView('0')
+#2 Z:\home\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PropertyController), Array)
+#3 Z:\home\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PropertyController), Object(ReflectionMethod), Array)
+#4 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/view')
+#14 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/property/0
+HTTP_REFERER=http://realestateagency/index.php/property/index
+---
+2014/07/11 16:39:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in Z:\home\realestateagency\www\protected\controllers\PropertyController.php:185
+Stack trace:
+#0 Z:\home\realestateagency\www\protected\controllers\PropertyController.php(56): PropertyController->loadModel('0')
+#1 [internal function]: PropertyController->actionView('0')
+#2 Z:\home\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PropertyController), Array)
+#3 Z:\home\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PropertyController), Object(ReflectionMethod), Array)
+#4 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/view')
+#14 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/property/0
+HTTP_REFERER=http://realestateagency/index.php/property/index
+---
+2014/07/11 16:42:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in Z:\home\realestateagency\www\protected\controllers\PropertyController.php:185
+Stack trace:
+#0 Z:\home\realestateagency\www\protected\controllers\PropertyController.php(56): PropertyController->loadModel('0')
+#1 [internal function]: PropertyController->actionView('0')
+#2 Z:\home\Yii\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(PropertyController), Array)
+#3 Z:\home\Yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PropertyController), Object(ReflectionMethod), Array)
+#4 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('property/view')
+#14 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/index.php/property/0
+HTTP_REFERER=http://realestateagency/index.php/property/index
+---
+2014/07/11 19:29:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in Z:\home\Yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\Yii\framework\web\CController.php(270): CController->missingAction('')
+#1 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('')
+#2 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user')
+#3 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/user/
+---
+2014/07/11 20:17:23 [warning] [application] Не удалось присвоить небезопасный атрибут "passwd2" класса "User".
+in Z:\home\realestateagency\www\protected\controllers\UserController.php (157)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/11 21:27:00 [warning] [application] Не удалось присвоить небезопасный атрибут "passwd2" класса "User".
+in Z:\home\realestateagency\www\protected\controllers\UserController.php (157)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/11 22:07:17 [warning] [application] Не удалось присвоить небезопасный атрибут "passwd2" класса "User".
+in Z:\home\realestateagency\www\protected\controllers\UserController.php (157)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/11 22:07:55 [warning] [application] Не удалось присвоить небезопасный атрибут "passwd2" класса "User".
+in Z:\home\realestateagency\www\protected\controllers\UserController.php (157)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/11 22:24:32 [error] [exception.CException] exception 'CException' with message 'Вы уже зарегистрированны!' in Z:\home\realestateagency\www\protected\controllers\UserController.php:150
+Stack trace:
+#0 Z:\home\Yii\framework\web\actions\CInlineAction.php(49): UserController->actionRegistration()
+#1 Z:\home\Yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#2 Z:\home\Yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#3 Z:\home\Yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\Yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#5 Z:\home\Yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#6 Z:\home\Yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#7 Z:\home\Yii\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\Yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\Yii\framework\web\CWebApplication.php(282): CController->run('registration')
+#10 Z:\home\Yii\framework\web\CWebApplication.php(141): CWebApplication->runController('user/registrati...')
+#11 Z:\home\Yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\realestateagency\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/index.php/user/registration
+HTTP_REFERER=http://realestateagency/index.php/user/login
+---
+2014/07/11 22:53:36 [warning] [application] Не удалось присвоить небезопасный атрибут "passwd2" класса "User".
+in Z:\home\realestateagency\www\protected\controllers\UserController.php (157)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/11 22:54:30 [warning] [application] Не удалось присвоить небезопасный атрибут "passwd2" класса "User".
+in Z:\home\realestateagency\www\protected\controllers\UserController.php (157)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/11 22:54:36 [warning] [application] Не удалось присвоить небезопасный атрибут "passwd2" класса "User".
+in Z:\home\realestateagency\www\protected\controllers\UserController.php (157)
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/11 23:26:42 [error] [system.db.CDbCommand] Error in preparing SQL: DELETE FROM 'YiiSession' WHERE expire<:expire
+in Z:\home\realestateagency\www\index.php (13)
+2014/07/11 23:26:42 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::execute(): CDbCommand не удалось подготовить SQL-запрос: SQLSTATE[HY000]: General error: 1 no such table: YiiSession. Выполнявшийся SQL-запрос: DELETE FROM 'YiiSession' WHERE expire<:expire.
+in Z:\home\realestateagency\www\index.php (13)

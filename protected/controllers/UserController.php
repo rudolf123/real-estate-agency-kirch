@@ -80,7 +80,7 @@ class UserController extends Controller {
         // Проверяем является ли пользователь гостем
         // ведь если он уже зарегистрирован - формы он не должен увидеть.
         if (!Yii::app()->user->isGuest) {
-            throw new CException('Вы уже зарегистрированы!');
+            $this->render('alreadylogin');
         } else {
             if (!empty($_POST['User'])) {
                 $form->attributes = $_POST['User'];
@@ -147,7 +147,7 @@ class UserController extends Controller {
     public function actionRegistration() {
         $form = new User();
         if (!Yii::app()->user->isGuest) {
-            throw new CException('Вы уже зарегистрированны!');
+            $this->render('alreadylogin');
         } else {
             $this->performAjaxValidation($form);
 

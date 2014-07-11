@@ -1,20 +1,14 @@
+<h1>Недвижимость и ЗУ</h1>
+
+<div class="buttons"> 
+    <?php echo CHtml::link("Просмотр таблицей", CHtml::normalizeUrl('admin'),array('class'=>'my_button')) ?> 
+    <?php echo CHtml::link("Новая запись", CHtml::normalizeUrl('create'), array('class'=>'my_button')) ?>
+</div>
+<div class="contentborder">
 <?php
-/* @var $this PropertyController */
-/* @var $dataProvider CActiveDataProvider */
-
-$this->breadcrumbs=array(
-	'Properties',
-);
-
-$this->menu=array(
-	array('label'=>'Create Property', 'url'=>array('create')),
-	array('label'=>'Manage Property', 'url'=>array('admin')),
-);
+$this->widget('zii.widgets.CListView', array(
+    'dataProvider' => $dataProvider,
+    'itemView' => '_view',
+));
 ?>
-
-<h1>Properties</h1>
-
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+</div>

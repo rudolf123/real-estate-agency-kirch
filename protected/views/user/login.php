@@ -19,21 +19,24 @@
 
     <?php echo $forms->errorSummary($form); ?><br />
     <fieldset>
-        <?php echo $forms->textField($form, 'login', array('placeholder' => 'Имя пользователя')) ?>
-        <?php echo $forms->passwordField($form, 'passwd', array('placeholder' => 'Пароль')) ?>
-        <?php
-        $this->widget('zii.widgets.jui.CJuiButton', array(
-            'name' => 'submit',
-            'caption' => 'Войти',
-            'htmlOptions' => array(
-                'class' => 'action-button'
-            ),
-            'onclick' => 'submit',
-                )
-        );
-        ?>
-        <br />
-        <?php echo CHtml::link('Регистрация нового пользователя', array('user/registration')); ?>
+        <table align="center">
+            <td>
+                <?php echo $forms->textField($form, 'login', array('placeholder' => 'Имя пользователя')) ?>
+            </td>
+            <tr>
+                <td>
+                    <?php echo $forms->passwordField($form, 'passwd', array('placeholder' => 'Пароль')) ?>
+                </td>
+            </tr>
+        </table>
+        <div align="center">
+                <?php echo CHtml::submitButton('Войти', array('class' => 'my_button_blue')); ?>
+            <div style="margin-top: 10px">
+
+                <?php echo CHtml::link('Регистрация нового пользователя', array('user/registration')); ?>
+            </div>
+        </div>
     </fieldset>
+
     <?php $this->endWidget(); ?>
 </div>
