@@ -5,7 +5,14 @@ $this->widget('zii.widgets.CDetailView', array(
     'data' => $model,
     'attributes' => array(
         'id',
-        'purpose',
+        array(
+            'name' => 'purpose_id',
+            'value' => Purposes::model()->find(
+                    'id=:purpose_id', array(
+                ':purpose_id' => $model->purpose_id
+                    )
+            )->name,
+        ),
         'address',
         'area',
         'price',

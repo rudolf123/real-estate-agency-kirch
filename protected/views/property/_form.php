@@ -17,8 +17,6 @@
         ),
     ));
     ?>
-    <div id="success"></div>
-
 
     <fieldset>
         <p class="note">Поля отмеченные <span class="required">*</span> обязательны для заполнения.</p>
@@ -29,10 +27,14 @@
                 <td><?php echo $form->dropDownList($model, 'type', array("Недвижимость", "ЗУ"), array('empty' => '')); ?></td>
             </tr>
             <tr>
-                <td> <?php echo $form->labelEx($model, 'purpose'); ?></td>
+                <td> <?php echo $form->labelEx($model, 'purpose_id'); ?></td>
                 <td> <?php
-                    echo $form->dropDownList($model, 'purpose', CHtml::listData(Purposes::model()->findAllByAttributes(
-                                            array('type' => 0)), 'name', 'name'), array('empty' => ''));
+                    if (isset($model->type))
+                        echo $form->dropDownList($model, 'purpose_id', CHtml::listData(Purposes::model()->findAllByAttributes(
+                                                array('type' => $model->type)), 'id', 'name'), array('empty' => ''));
+                    else
+                        echo $form->dropDownList($model, 'purpose_id', CHtml::listData(Purposes::model()->findAllByAttributes(
+                                                array('type' => 0)), 'id', 'name'), array('empty' => ''));
                     ?></td>
             </tr>
             <tr>

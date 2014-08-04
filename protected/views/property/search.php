@@ -3,16 +3,26 @@
 <div class="search-form">
     <?php
     $this->renderPartial('_search', array(
-        'model' => $model,
+            'params' => $params,
     ));
     ?>
 </div><!-- search-form -->
+
+<div class="contentborder">
+    <?php
+    if (!is_null($model))
+        $this->widget('zii.widgets.CListView', array(
+            'dataProvider' => $model,
+            'itemView' => '_view',
+        ));
+    ?>
+</div>
 
 <script type="text/javascript">
 
     $('#types_0').click(function() {
         if (this.checked) {
-            $('#searchpurposes').empty();
+            $('#searchpurposes1').empty();
             $.ajax({
                 type: 'post', //тип запроса: get,post либо head
                 url: '<?php echo Yii::app()->request->hostInfo . Yii::app()->request->url ?>',
@@ -21,15 +31,20 @@
                 cache: false,
                 success: function(data)
                 {
-                    $('#searchpurposes').html(data);
+                    $('#searchpurposes1').html(data);
                 }
             });
+
+            if (!$('#types_1').checked)
+                $('#searcharea').toggle(this.checked);
         }
-        $('#searchpurposes').toggle(this.checked);
+        $('#areaID1').toggle(this.checked);
+        $('#areaID1').val('');
+        $('#searchpurposes1').toggle(this.checked);
     });
     $('#types_1').click(function() {
         if (this.checked) {
-
+            $('#searchpurposes2').empty();
             $.ajax({
                 type: 'post', //тип запроса: get,post либо head
                 url: '<?php echo Yii::app()->request->hostInfo . Yii::app()->request->url ?>',
@@ -38,10 +53,15 @@
                 cache: false,
                 success: function(data)
                 {
-                    $('#searchpurposes').empty();
-                    $('#searchpurposes').html(data);
+                    $('#searchpurposes2').html(data);
                 }
             });
+            if (!$('#types_0').checked)
+                $('#searcharea').toggle(this.checked);
         }
+
+        $('#areaID2').toggle(this.checked);
+        $('#areaID2').val('');
+        $('#searchpurposes2').toggle(this.checked);
     });
 </script>

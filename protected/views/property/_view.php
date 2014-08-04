@@ -9,12 +9,9 @@
     <?php echo CHtml::link(CHtml::encode($data->address), array('view', 'id' => $data->id)); ?>
     <br />
 
-    <b><?php echo CHtml::encode($data->getAttributeLabel('purpose')); ?>:</b>
-    <?php echo CHtml::encode($data->purpose); ?>
+    <b><?php echo CHtml::encode($data->getAttributeLabel('purpose_id')); ?>:</b>
+    <?php echo CHtml::encode(Purposes::model()->find('id=:purpose_id',array(':purpose_id'=>$data->purpose_id))->name); ?>
     <br />
-
-
-
     <b><?php echo CHtml::encode($data->getAttributeLabel('area')); ?>:</b>
     <?php echo CHtml::encode($data->area); ?>
     <br />
@@ -26,14 +23,28 @@
     <b><?php echo CHtml::encode($data->getAttributeLabel('type')); ?>:</b>
     <?php
     if ($data->type === '0')
-        echo CHtml::
-        encode('Недвижимость');
+        echo CHtml::encode('Недвижимость');
     else
         echo CHtml::encode('ЗУ');
     ?>
     <br />
-    <div style=" width:100%; height:1px; clear:both;"></div>
-        <div class="photoline"> <?php echo CHtml::image('/images/banner1.jpg','', array("width"=>"50px" ,"height"=>"50px")); ?></div>
-        <div class="photoline"> <?php echo CHtml::image('/images/nedv1.jpg','', array("width"=>"50px" ,"height"=>"50px")); ?></div>
-    <div style=" width:100%; height:1px; clear:both;"></div>
+    <p>Фото</p>
+    <div class="image-row">
+        
+  
+            <?php
+            echo Chtml::link(CHtml::image('/images/nedv1.jpg', 'Изображение недоступно!', array('class' => 'example-image',)), '/images/nedv1.jpg', array(
+                'data-lightbox' => 'pic' . $data->id,
+                'data-title' => 'image_' . $data->id,
+            ));
+            ?>
+           
+            <?php
+            echo Chtml::link(CHtml::image('/images/banner1.jpg', 'Изображение недоступно!', array('class' => 'example-image',)), '/images/banner1.jpg', array(
+                'data-lightbox' => 'pic' . $data->id,
+                'data-title' => 'image_' . $data->id,
+            ));
+            ?>
+
+    </div>
 </div>

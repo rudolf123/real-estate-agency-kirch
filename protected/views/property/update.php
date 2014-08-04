@@ -1,21 +1,26 @@
-<?php
-/* @var $this PropertyController */
-/* @var $model Property */
+<h1>Изменение записи №<?php echo $model->id; ?></h1>
 
-$this->breadcrumbs=array(
-	'Properties'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
-	'Update',
-);
+<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
 
-$this->menu=array(
-	array('label'=>'List Property', 'url'=>array('index')),
-	array('label'=>'Create Property', 'url'=>array('create')),
-	array('label'=>'View Property', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Property', 'url'=>array('admin')),
-);
-?>
+<script type="text/javascript">
 
-<h1>Update Property <?php echo $model->id; ?></h1>
+    $('#Property_type').change(function() {
 
-<?php echo $this->renderPartial('_form', array('model'=>$model, 'action'=>'property/update')); ?>
+        $.ajax({
+            type: 'post', //тип запроса: get,post либо head
+            url: '<?php echo Yii::app()->request->hostInfo . Yii::app()->request->url ?>',
+            data: {'ajax_purposes': $(this).val()}, //параметры запроса
+            dataType: 'json',
+            cache: false,
+            success: function(data)
+            {
+                var options = $("#Property_purpose_id");
+                options.empty();
+                options.append($("<option />").val('').text(''));
+                $.each(data, function(i, elem) {
+                    options.append($("<option />").val(i).text(elem));
+                });
+            }
+        });
+    });
+</script>

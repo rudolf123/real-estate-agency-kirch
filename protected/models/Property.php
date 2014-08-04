@@ -6,7 +6,7 @@
  * The followings are the available columns in table 'property':
  * @property integer $id
  * @property string $number
- * @property string $purpose
+ * @property string $purpose_id
  * @property string $address
  * @property double $area
  * @property double $price
@@ -40,13 +40,13 @@ class Property extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('purpose, address, area, price, type', 'required'),
-			array('area, price', 'numerical'),
-			array('purpose, address', 'length', 'max'=>200),
+			array('purpose_id, address, area, price, type', 'required'),
+			array('area, price, purpose_id', 'numerical'),
+			array('address', 'length', 'max'=>200),
 			array('type', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, purpose, address, area, price, type', 'safe', 'on'=>'search'),
+			array('id, purpose_id, address, area, price, type', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,7 +68,7 @@ class Property extends CActiveRecord
 	{
 		return array(
 			'id' => '№',
-			'purpose' => 'Назначение',
+			'purpose_id' => 'Назначение',
 			'address' => 'Адрес',
 			'area' => 'Площадь, кв.м.',
 			'price' => 'Цена за кв.м.',
@@ -88,7 +88,7 @@ class Property extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('purpose',$this->purpose,true);
+		$criteria->compare('purpose_id',$this->purpose_id, true);
 		$criteria->compare('address',$this->address,true);
 		$criteria->compare('area',$this->area);
 		$criteria->compare('price',$this->price);

@@ -5,10 +5,10 @@
 <!--<div id="upload-wrapper">
     <div align="center">
         <h3>Ajax Image Uploader</h3>
-        <form action="<?php //echo Yii::app()->createAbsoluteUrl("site/processimageupload");      ?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
+        <form action="<?php //echo Yii::app()->createAbsoluteUrl("site/processimageupload");        ?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
             <input name="ImageFile" id="imageInput" type="file" />
             <input type="submit"  id="submit-btn" value="Upload" />
-            <img src="<?php // echo Yii::app()->request->baseUrl;      ?>/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
+            <img src="<?php // echo Yii::app()->request->baseUrl;        ?>/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
         </form>
         <div id="output"></div>
     </div>
@@ -28,11 +28,11 @@
             cache: false,
             success: function(data)
             {
-                var options = $("#Property_purpose");
+                var options = $("#Property_purpose_id");
                 options.empty();
                 options.append($("<option />").val('').text(''));
-                $.each(data, function(i) {
-                    options.append($("<option />").val(data[i]).text(data[i]));
+                $.each(data, function(i, elem) {
+                    options.append($("<option />").val(i).text(elem));
                 });
             }
         });

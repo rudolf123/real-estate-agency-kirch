@@ -26,7 +26,7 @@ class PropertyController extends Controller {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view'),
+                'actions' => array('index', 'view', 'search'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -62,15 +62,15 @@ class PropertyController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
     public function actionCreate() {
-
         if (isset($_POST['ajax_purposes'])) {
             $purposes = Purposes::model()->findAllByAttributes(
                     array('type' => $_POST['ajax_purposes']));
             $count_purposes = count($purposes);
             if ($count_purposes > 0) {
                 $arr_purposes = array();
-                foreach ($purposes as $purpose)
-                    array_push($arr_purposes, $purpose->name);
+                foreach ($purposes as $purpose) {
+                    $arr_purposes[$purpose->id] = $purpose->name;
+                }
             }
 
             echo json_encode($arr_purposes);
@@ -85,13 +85,13 @@ class PropertyController extends Controller {
             Yii::app()->end();
         }
 
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+// Uncomment the following line if AJAX validation is needed
+// $this->performAjaxValidation($model);
 
         if (isset($_POST['Property'])) {
             $model->attributes = $_POST['Property'];
             if ($model->save())
-                $this->redirect(array('view', 'id' => $model->id));
+                $this->redirect(array('index'));
         }
 
         $this->render('create', array(
@@ -107,13 +107,28 @@ class PropertyController extends Controller {
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
 
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+        if (isset($_POST['ajax_purposes'])) {
+            $purposes = Purposes::model()->findAllByAttributes(
+                    array('type' => $_POST['ajax_purposes']));
+            $count_purposes = count($purposes);
+            if ($count_purposes > 0) {
+                $arr_purposes = array();
+                foreach ($purposes as $purpose) {
+                    $arr_purposes[$purpose->id] = $purpose->name;
+                }
+            }
+
+            echo json_encode($arr_purposes);
+
+            Yii::app()->end();
+        }
+// Uncomment the following line if AJAX validation is needed
+// $this->performAjaxValidation($model);
 
         if (isset($_POST['Property'])) {
             $model->attributes = $_POST['Property'];
             if ($model->save())
-                $this->redirect(array('view', 'id' => $model->id));
+                $this->redirect(array('admin'));
         }
 
         $this->render('update', array(
@@ -129,7 +144,7 @@ class PropertyController extends Controller {
     public function actionDelete($id) {
         $this->loadModel($id)->delete();
 
-        // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
         if (!isset($_GET['ajax']))
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
     }
@@ -158,24 +173,81 @@ class PropertyController extends Controller {
         ));
     }
 
+    private function decodesearchcondition($param, $id, $criteria) {
+        if ($param === 'areaID1') {
+            if ($id === '0') {
+                $criteria->addBetweenCondition('area', '15', '30', 'AND');
+            }
+            if ($id === '1') {
+                $criteria->addBetweenCondition('area', '30', '50', 'AND');
+            }
+            if ($id === '2') {
+                $criteria->addBetweenCondition('area', '50', '150', 'AND');
+            }
+            if ($id === '3') {
+                $criteria->addBetweenCondition('area', '150', '500', 'AND');
+            }
+            if ($id === '4') {
+                $criteria->addBetweenCondition('area', '500', '999999999', 'AND');
+            }
+        }
+        if ($param === 'areaID2') {
+            if ($id === '0') {
+                $criteria->addBetweenCondition('area', '200', '1500', 'AND');
+            }
+            if ($id === '1') {
+                $criteria->addBetweenCondition('area', '1500', '5000', 'AND');
+            }
+            if ($id === '2') {
+                $criteria->addBetweenCondition('area', '10000', '50000', 'AND');
+            }
+            if ($id === '3') {
+                $criteria->addBetweenCondition('area', '50000', '100000', 'AND');
+            }
+            if ($id === '4') {
+                $criteria->addBetweenCondition('area', '100000', '200000', 'AND');
+            }
+            if ($id === '5') {
+                $criteria->addBetweenCondition('area', '100000', '200000', 'AND');
+            }
+            if ($id === '6') {
+                $criteria->addBetweenCondition('area', '100000', '200000', 'AND');
+            }
+        }
+
+        return $criteria;
+    }
+
     public function actionSearch() {
+
         if (isset($_POST['ajax_purposes'])) {
-            echo CHtml::checkBoxList('purposes[]', '', CHtml::listData(Purposes::model()->findAllByAttributes(
-                                    array('type' => $_POST['ajax_purposes'])), 'name', 'name'), array('labelOptions' => array('style' => 'display:inline')));
+            echo "<p>Назначение объекта</p>";
+            echo CHtml::checkBoxList('purposes_id[]', '', CHtml::listData(Purposes::model()->findAllByAttributes(
+                                    array('type' => $_POST['ajax_purposes'])), 'id', 'name'), array('labelOptions' => array('style' => 'display:inline')));
             Yii::app()->end();
         }
 
         $criteria = new CDbCriteria();
         if (isset($_GET['types']))
             $criteria->addInCondition('type', $_GET['types'], 'AND');
-        if (isset($_GET['purposes']))
-            $criteria->addInCondition('purpose', $_GET['purposes']);
-
-        $query = new CActiveDataProvider('Property', array(
-            'criteria' => $criteria));
-        $this->render('search', array(
-            'model' => $query,
-        ));
+        if (isset($_GET['purposes_id']))
+            $criteria->addInCondition('purpose_id', $_GET['purposes_id'], 'AND');
+        if (isset($_GET['areaID1'])) {
+            $criteria = $this->decodesearchcondition('areaID1', $_GET['areaID1'], $criteria);
+        }
+        if (isset($_GET['areaID2'])) {
+            $criteria = $this->decodesearchcondition('areaID2', $_GET['areaID2'], $criteria);
+        }
+        if (isset($_GET['types'])) {
+            $query = new CActiveDataProvider('Property', array(
+                'criteria' => $criteria));
+            $this->render('search', array(
+                'model' => $query,
+                'params' => $_GET,
+            ));
+        } else {
+            $this->render('search', array());
+        }
     }
 
     /**
