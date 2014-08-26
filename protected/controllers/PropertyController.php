@@ -62,6 +62,7 @@ class PropertyController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
     public function actionCreate() {
+        
         if (isset($_POST['ajax_purposes'])) {
             $purposes = Purposes::model()->findAllByAttributes(
                     array('type' => $_POST['ajax_purposes']));

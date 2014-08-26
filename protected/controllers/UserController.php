@@ -92,8 +92,8 @@ class UserController extends Controller {
                     $model->sessionend = date('Y-m-d H:i:s', time());
                     $model->online = true;
                     $model->save();
-//                    $this->redirect(Yii::app()->homeUrl);
-                    $this->redirect(Yii::app()->user->returnUrl);
+                    $this->redirect(Yii::app()->homeUrl);
+//                    $this->redirect(Yii::app()->user->returnUrl);
                 }
             }
             $this->render('login', array('form' => $form));

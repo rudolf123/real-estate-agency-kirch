@@ -10,7 +10,18 @@
     $form = $this->beginWidget('CActiveForm', array(
         'id' => 'msform',
         'enableAjaxValidation' => true,
-        //'enableClientValidation' => true,
+        'action' => CHtml::normalizeUrl(array('property/create')),
+        'enableClientValidation' => true,
+        'clientOptions' => array(
+            'validateOnSubmit' => true,
+            'afterValidate' => 'js:function(form,data,hasError)
+                        {
+                            if(!hasError)
+                            {
+                                $("#success").html("Вы подписаны на обновления.");
+                            }
+                        }'
+        ),
         'htmlOptions' => array(
             'accept-charset' => 'UTF-8',
         //'style' => 'width:100%; margin-top:0px; padding-bottom:0px'
@@ -18,6 +29,7 @@
     ));
     ?>
 
+    <p id="success"></p>
     <fieldset>
         <p class="note">Поля отмеченные <span class="required">*</span> обязательны для заполнения.</p>
 
@@ -51,8 +63,14 @@
                 <td> <?php echo $form->textField($model, 'price'); ?></td>
             </tr>
         </table>
-
-
+        <div class="image-row">
+            <input type="file" accept=".gif,.jpg,.jpeg,.png" name="images[]"/>
+        </div>
+        <!--<div class="file-input-wrapper">
+            <img class="example-image" id="img1" style="display: none"/>
+            <button class="btn-file-input">+</button>
+            <input type="file" name="images[]"/>
+        </div>-->
         <?php
         echo CHtml::submitButton('Сохранить', array('class' => 'my_button_blue'));
 //        echo CHtml::ajaxSubmitButton('Save', CHtml::normalizeUrl(array($action)), array(
@@ -82,3 +100,34 @@
     <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                $('#image').attr('src', e.target.result);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#img1input").change(function() {
+        readURL(this);
+    });
+
+    $('#msform').delegate('input[type=file]', 'change', function() {
+        var fileName = $(this).val();
+//        alert(fileName);
+        if (fileName.lastIndexOf("png") === fileName.length - 3)
+            addField();
+        else
+            alert("Файл изображения должен иметь расширение .gif,.jpg,.jpeg,.png");
+    });
+
+    function addField() {
+        var filename = $('#msform input:file').last().val();
+        if (filename.length !== 0)
+            $('#msform input:file').last().after($('<input type="file" accept=".gif,.jpg,.jpeg,.png" name="images[]"/>'));
+    }
+</script>
