@@ -3,7 +3,7 @@
 <div class="search-form">
     <?php
     $this->renderPartial('_search', array(
-            'params' => $params,
+        'params' => $params,
     ));
     ?>
 </div><!-- search-form -->

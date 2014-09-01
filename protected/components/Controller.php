@@ -25,11 +25,6 @@ class Controller extends CController {
      */
     public $breadcrumbs = array();
 
-    protected function beforeAction($action) {
-        $my_returnUrl = Yii::app()->user->returnUrl;
-        return true;
-    }
-
     protected static function allowOnlyAdmin() {
         if (Yii::app()->user->isAdmin) {
             return true;
@@ -53,6 +48,12 @@ class Controller extends CController {
 
             return $model->creator_id === Yii::app()->user->id;
         }
+    }
+
+    protected function logger($string) {
+        $file = fopen('log.txt', 'a');
+        fwrite($file, $string);
+        fclose($file);
     }
 
 }

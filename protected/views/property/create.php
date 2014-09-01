@@ -5,10 +5,10 @@
 <!--<div id="upload-wrapper">
     <div align="center">
         <h3>Ajax Image Uploader</h3>
-        <form action="<?php //echo Yii::app()->createAbsoluteUrl("site/processimageupload");        ?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
+        <form action="<?php //echo Yii::app()->createAbsoluteUrl("site/processimageupload");         ?>" method="post" enctype="multipart/form-data" id="MyUploadForm">
             <input name="ImageFile" id="imageInput" type="file" />
             <input type="submit"  id="submit-btn" value="Upload" />
-            <img src="<?php // echo Yii::app()->request->baseUrl;        ?>/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
+            <img src="<?php // echo Yii::app()->request->baseUrl;         ?>/images/ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
         </form>
         <div id="output"></div>
     </div>
@@ -25,9 +25,14 @@
             url: '<?php echo Yii::app()->request->hostInfo . Yii::app()->request->url ?>',
             data: {'ajax_purposes': $(this).val()}, //параметры запроса
             dataType: 'json',
+            beforeSend :
+                    function() {
+                        $("#purposeloader").show();
+                    },
             cache: false,
             success: function(data)
             {
+                $("#purposeloader").hide(); 
                 var options = $("#Property_purpose_id");
                 options.empty();
                 options.append($("<option />").val('').text(''));

@@ -14,10 +14,10 @@
  */
 class UserController extends Controller {
 
-    public function init() {
-        if ($this->isValidForRedirectRequest(Yii::app()->request)) {
-            Yii::app()->user->returnUrl = Yii::app()->request->requestUri;
-        }
+    protected function beforeAction($action) {
+        if ($action->id != 'login')
+            Yii::app()->user->setReturnUrl(Yii::app()->request->urlReferrer);
+        return true;
     }
 
     public function filters() {
@@ -33,7 +33,7 @@ class UserController extends Controller {
      */
     public function accessRules() {
         return array(
-            array('allow', 
+            array('allow',
                 'actions' => array('login', 'registration'),
                 'users' => array('*'),
             ),
@@ -92,8 +92,7 @@ class UserController extends Controller {
                     $model->sessionend = date('Y-m-d H:i:s', time());
                     $model->online = true;
                     $model->save();
-                    $this->redirect(Yii::app()->homeUrl);
-//                    $this->redirect(Yii::app()->user->returnUrl);
+                    $this->redirect(Yii::app()->user->returnUrl);
                 }
             }
             $this->render('login', array('form' => $form));
@@ -107,12 +106,12 @@ class UserController extends Controller {
      * Т.е. кнопочка "выход"
      */
     public function actionLogout() {
-        /*$model = User::model()->findByAttributes(array('id' => Yii::app()->user->id));
-        $res = (strtotime(date('Y-m-d H:i:s', time())) - strtotime($model->sessionend)); // strtotime($model->sessionstart));
-        $model->sessionend = date('Y-m-d H:i:s', time());
-        $model->learningtime = $model->learningtime + $res;
-        $model->online = false;
-        $model->save();*/
+        /* $model = User::model()->findByAttributes(array('id' => Yii::app()->user->id));
+          $res = (strtotime(date('Y-m-d H:i:s', time())) - strtotime($model->sessionend)); // strtotime($model->sessionstart));
+          $model->sessionend = date('Y-m-d H:i:s', time());
+          $model->learningtime = $model->learningtime + $res;
+          $model->online = false;
+          $model->save(); */
         Yii::app()->user->logout();
         $this->redirect(Yii::app()->homeUrl);
     }
@@ -131,7 +130,7 @@ class UserController extends Controller {
             $pass = $model->passwd;
             $model->attributes = $_POST['User'];
             if ($model->passwd !== $pass)
-                $model->passwd = crypt($model->passwd, 'Fghqwe$trteysdf'); //self::blowfishSalt());
+                $model->passwd = crypt($model->passwd, 'Fghqwe$trteysdf'); //self::$string());
             $model->save();
         }
 

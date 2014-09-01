@@ -62,7 +62,7 @@ class PropertyController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
     public function actionCreate() {
-        
+
         if (isset($_POST['ajax_purposes'])) {
             $purposes = Purposes::model()->findAllByAttributes(
                     array('type' => $_POST['ajax_purposes']));
@@ -91,8 +91,17 @@ class PropertyController extends Controller {
 
         if (isset($_POST['Property'])) {
             $model->attributes = $_POST['Property'];
-            if ($model->save())
-                $this->redirect(array('index'));
+
+            $valid = $model->validate();
+            if ($valid) {
+                if ($model->save())
+                    $this->redirect(array('index'));
+            } else {
+                $error = CActiveForm::validate($model);
+                if ($error != '[]')
+                    echo $error;
+                Yii::app()->end();
+            }
         }
 
         $this->render('create', array(

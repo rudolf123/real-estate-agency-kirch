@@ -617,7 +617,7 @@ button.btn :-moz-focus-inner {
     border-radius: 2px;
     margin-bottom: 10px;
     width: 100%;
-    
+
 }
 #msform select{
     border: 1px solid #CCC;
@@ -681,7 +681,7 @@ button.btn :-moz-focus-inner {
 .file-input-wrapper {
     width: 200px;
     height: 100px;
-   // overflow: hidden;
+    // overflow: hidden;
     position: relative;
 }
 .file-input-wrapper > input[type="file"] {
@@ -692,38 +692,45 @@ button.btn :-moz-focus-inner {
     opacity: 0;
 }
 .file-input-wrapper > .btn-file-input {
-	background-color:#f2f4fa;
-	-webkit-border-top-left-radius:14px;
-	-moz-border-radius-topleft:14px;
-	border-top-left-radius:14px;
-	-webkit-border-top-right-radius:14px;
-	-moz-border-radius-topright:14px;
-	border-top-right-radius:14px;
-	-webkit-border-bottom-right-radius:14px;
-	-moz-border-radius-bottomright:14px;
-	border-bottom-right-radius:14px;
-	-webkit-border-bottom-left-radius:14px;
-	-moz-border-radius-bottomleft:14px;
-	border-bottom-left-radius:14px;
-	text-indent:0px;
-	border:1px solid #d3d4de;
-	display:inline-block;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:60px;
-	font-weight:normal;
-	font-style:normal;
-	height:100px;
-	line-height:100px;
-	width:120px;
-	text-decoration:none;
-	text-align:center;
+    background-color:#f2f4fa;
+    -webkit-border-top-left-radius:14px;
+    -moz-border-radius-topleft:14px;
+    border-top-left-radius:14px;
+    -webkit-border-top-right-radius:14px;
+    -moz-border-radius-topright:14px;
+    border-top-right-radius:14px;
+    -webkit-border-bottom-right-radius:14px;
+    -moz-border-radius-bottomright:14px;
+    border-bottom-right-radius:14px;
+    -webkit-border-bottom-left-radius:14px;
+    -moz-border-radius-bottomleft:14px;
+    border-bottom-left-radius:14px;
+    text-indent:0px;
+    border:1px solid #d3d4de;
+    display:inline-block;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:60px;
+    font-weight:normal;
+    font-style:normal;
+    height:100px;
+    line-height:100px;
+    width:120px;
+    text-decoration:none;
+    text-align:center;
 }
 .file-input-wrapper:hover > .btn-file-input {
     background-color:#d2e0f5;
 }
 
 .file-input-wrapper:hover > .btn-file-input:active {
-    	position:relative;
-	top:1px;
+    position:relative;
+    top:1px;
+}
+
+#purposeloader{
+    background-image: url('/images/load2.gif');
+    width: 16px;
+    height: 16px;
+    display: none;
 }

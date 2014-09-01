@@ -10,24 +10,25 @@
     $form = $this->beginWidget('CActiveForm', array(
         'id' => 'msform',
         'enableAjaxValidation' => true,
-        'action' => CHtml::normalizeUrl(array('property/create')),
+        'action' => $this->createUrl('property/create'),
         'enableClientValidation' => true,
-        'clientOptions' => array(
-            'validateOnSubmit' => true,
-            'afterValidate' => 'js:function(form,data,hasError)
-                        {
-                            if(!hasError)
-                            {
-                                $("#success").html("Вы подписаны на обновления.");
-                            }
-                        }'
-        ),
+//        'clientOptions' => array(
+//            'validateOnSubmit' => true,
+//            'afterValidate' => 'js:function(form,data,hasError)
+//                        {
+//                            if(!hasError)
+//                            {
+//                                $("#success").html("Вы подписаны на обновления.");
+//                            }
+//                        }'
+//        ),
         'htmlOptions' => array(
             'accept-charset' => 'UTF-8',
         //'style' => 'width:100%; margin-top:0px; padding-bottom:0px'
         ),
     ));
     ?>
+ <div class="errorMessage" id="formResult"></div>
 
     <p id="success"></p>
     <fieldset>
@@ -47,7 +48,9 @@
                     else
                         echo $form->dropDownList($model, 'purpose_id', CHtml::listData(Purposes::model()->findAllByAttributes(
                                                 array('type' => 0)), 'id', 'name'), array('empty' => ''));
-                    ?></td>
+                    ?>
+                </td>
+                <td><div id="purposeloader"></div></td>
             </tr>
             <tr>
                 <td><?php echo $form->labelEx($model, 'address'); ?></td>
@@ -72,7 +75,7 @@
             <input type="file" name="images[]"/>
         </div>-->
         <?php
-        echo CHtml::submitButton('Сохранить', array('class' => 'my_button_blue'));
+//        echo CHtml::submitButton('Сохранить', array('class' => 'my_button_blue'));
 //        echo CHtml::ajaxSubmitButton('Save', CHtml::normalizeUrl(array($action)), array(
 //            'dataType' => 'json',
 //            'type' => 'post',
@@ -93,11 +96,31 @@
 //                      }
 //                    }'
 //        ));
+        echo CHtml::ajaxSubmitButton('Save', CHtml::normalizeUrl(array('property/create', 'render' => true)), array(
+            'dataType' => 'json',
+            'type' => 'post',
+            'success' => 'function(data) {
+                         $("#AjaxLoader").hide();  
+                        if(data.status=="success"){
+                         $("#formResult").html("form submitted successfully.");
+                         $("#msform")[0].reset();
+                        }
+                         else{
+                        $.each(data, function(key, val) {
+                        $("#msform #"+key+"_em_").text(val);                                                    
+                        $("#msform #"+key+"_em_").show();
+                        });
+                        }       
+                    }',
+            'beforeSend' => 'function(){                        
+                           $("#AjaxLoader").show();
+                      }'
+                ), array('id' => 'mybtn', 'class' => 'class1 class2'));
         ?>
 
     </fieldset>
 
-    <?php $this->endWidget(); ?>
+<?php $this->endWidget(); ?>
 
 </div><!-- form -->
 
@@ -118,8 +141,9 @@
 
     $('#msform').delegate('input[type=file]', 'change', function() {
         var fileName = $(this).val();
-//        alert(fileName);
-        if (fileName.lastIndexOf("png") === fileName.length - 3)
+        var files = [".gif", ".jpg", ".jpeg", ".png"];
+        var checkExt = files.indexOf(fileName.substring(fileName.lastIndexOf("."), fileName.length));
+        if (checkExt !== -1)
             addField();
         else
             alert("Файл изображения должен иметь расширение .gif,.jpg,.jpeg,.png");
