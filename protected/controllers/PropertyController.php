@@ -62,7 +62,7 @@ class PropertyController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
     public function actionCreate() {
-
+        $this->logger("postnewpropertyError");
         if (isset($_POST['ajax_purposes'])) {
             $purposes = Purposes::model()->findAllByAttributes(
                     array('type' => $_POST['ajax_purposes']));
@@ -83,6 +83,8 @@ class PropertyController extends Controller {
 
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'msform') {
             echo CActiveForm::validate($model);
+            $this->logger("postnewpropertyError");
+
             Yii::app()->end();
         }
 
@@ -91,7 +93,7 @@ class PropertyController extends Controller {
 
         if (isset($_POST['Property'])) {
             $model->attributes = $_POST['Property'];
-
+            $this->logger("postnewproperty");
             $valid = $model->validate();
             if ($valid) {
                 if ($model->save())
